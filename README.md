@@ -2,7 +2,7 @@
 
 ## **Preprocessing 1** 
 * Construct a container:
-    * Install the **docker** (can be download from  https://docs.docker.com/)
+    * Install the **docker** (can download from  https://docs.docker.com/)
 
     * Construct a container for "miniconda" in **docker** and run
 
@@ -16,9 +16,8 @@
     * Install VSCode (can be download from https://code.visualstudio.com/)
 
     * Install the packages:
-
-    - [x] Container Tools
-    - [x] Dev Containers
+        - [x] Container Tools
+        - [x] Dev Containers
 
     * Link to Github
         * Open VSCode
@@ -37,6 +36,8 @@
 
         * Search **repository name** that we would like to modify in the search box and click it!
         * Congrats! We can finally modify the repository in VSCode.
+        * Once **README.md** file is changed,  the **exclamation mark** in **Source Control** will show up!
+        * Click **Changes** --> right click and choose **Stage All Changes** --> enter modified index in **Message box** --> click **Commit** --> click **Sync...**
 
 ## **Preprocessing 2**
 * Construct an environment for postgresSQL
@@ -47,11 +48,8 @@
 
     `docker run --name my-postgres -e POSTGRES_PASSWORD=yourpassword -p 5432:5432 -d postgres`
 
-    * Install **DBeaver** (can be download from  https://dbeaver.io/)
-
+    * Install **DBeaver** (can download from  https://dbeaver.io/)
     * Open **DBeaver** and click "Create a new database connection"
     * Select PostgresSQL
-    * Enter the port and the password corresponding to previous constructed container "postgres"
-
-
-
+    * Enter the database name **postgres** and the **password** corresponding to previous constructed container "postgres"
+    * Click the database called **postgres** --> **Schemas** --> **public** --> **Tables**
