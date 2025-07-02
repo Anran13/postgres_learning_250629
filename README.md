@@ -1,10 +1,10 @@
 # postgres_learning_250629
 
-## **Preprocessing** 
+## **Preprocessing 1** 
 * Construct a container:
     * Install the **docker** (can be download from  https://docs.docker.com/)
 
-    * Construct a container for "miniconda" in **docker**.
+    * Construct a container for "miniconda" in **docker** and run
 
     Please enter the following command in Terminal 
     
@@ -37,3 +37,21 @@
 
         * Search **repository name** that we would like to modify in the search box and click it!
         * Congrats! We can finally modify the repository in VSCode.
+
+## **Preprocessing 2**
+* Construct an environment for postgresSQL
+
+    * Construct a container for "postgres" in **docker** and run
+
+    Please enter the following command in Terminal 
+
+    `docker run --name my-postgres -e POSTGRES_PASSWORD=yourpassword -p 5432:5432 -d postgres`
+
+    * Install **DBeaver** (can be download from  https://dbeaver.io/)
+
+    * Open **DBeaver** and click "Create a new database connection"
+    * Select PostgresSQL
+    * Enter the port and the password corresponding to previous constructed container "postgres"
+
+
+
